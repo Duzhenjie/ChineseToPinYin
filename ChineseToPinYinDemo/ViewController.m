@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "ChineseToPinYinTool.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextViewDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *haveSoundMark;
+@property (weak, nonatomic) IBOutlet UITextView *inputTextView;
 
 @end
 
@@ -24,6 +28,30 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UITextViewDelegate
+- (void)textViewDidChange:(UITextView *)textView
+{
+    [self putPinYinToResultLabel];
+}
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    if ([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    return YES;
+}
+- (IBAction)SwitchValueChanged:(id)sender {
+    [self putPinYinToResultLabel];
+}
+
+
+- (void)putPinYinToResultLabel
+{
+    NSString *resultText = [ChineseToPinYinTool pinYinStringFromChinese:self.inputTextView.text hasSoundMark:self.haveSoundMark.isOn];
+     self.resultLabel.text = resultText;
 }
 
 @end

@@ -21,6 +21,7 @@
 		BE3AAB9E19582DF000969B19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AAB8019582DF000969B19 /* UIKit.framework */; };
 		BE3AABA619582DF000969B19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE3AABA419582DF000969B19 /* InfoPlist.strings */; };
 		BE3AABA819582DF000969B19 /* ChineseToPinYinDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3AABA719582DF000969B19 /* ChineseToPinYinDemoTests.m */; };
+		BE3AABB319582E0E00969B19 /* ChineseToPinYinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3AABB219582E0E00969B19 /* ChineseToPinYinTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		BE3AABA319582DF000969B19 /* ChineseToPinYinDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChineseToPinYinDemoTests-Info.plist"; sourceTree = "<group>"; };
 		BE3AABA519582DF000969B19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BE3AABA719582DF000969B19 /* ChineseToPinYinDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinYinDemoTests.m; sourceTree = "<group>"; };
+		BE3AABB119582E0E00969B19 /* ChineseToPinYinTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinYinTool.h; sourceTree = "<group>"; };
+		BE3AABB219582E0E00969B19 /* ChineseToPinYinTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinYinTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				BE3AAB8E19582DF000969B19 /* Main.storyboard */,
 				BE3AAB9119582DF000969B19 /* ViewController.h */,
 				BE3AAB9219582DF000969B19 /* ViewController.m */,
+				BE3AABB119582E0E00969B19 /* ChineseToPinYinTool.h */,
+				BE3AABB219582E0E00969B19 /* ChineseToPinYinTool.m */,
 				BE3AAB9419582DF000969B19 /* Images.xcassets */,
 				BE3AAB8319582DF000969B19 /* Supporting Files */,
 			);
@@ -252,6 +257,7 @@
 				BE3AAB9319582DF000969B19 /* ViewController.m in Sources */,
 				BE3AAB8D19582DF000969B19 /* AppDelegate.m in Sources */,
 				BE3AAB8919582DF000969B19 /* main.m in Sources */,
+				BE3AABB319582E0E00969B19 /* ChineseToPinYinTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
